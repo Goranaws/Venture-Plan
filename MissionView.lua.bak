@@ -897,7 +897,7 @@ function EV:I_ADVENTURES_UI_LOADED()
 	MissionRewards = ir
 	ir:SetPoint("LEFT", s.Header, "LEFT", 100, -16)
 	ir.Duration = ir:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-	ir.Duration:SetPoint("LEFT", ir, "RIGHT", 30, 0)
+	ir.Duration:SetPoint("LEFT", ir, "RIGHT", 24, 0)
 	hooksecurefunc(CovenantMissionFrame, "SetTitle", function()
 		MissionRewards_OnShow(ir)
 	end)

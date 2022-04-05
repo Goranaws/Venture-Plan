@@ -123,7 +123,7 @@ local function cmpMissionInfo(a, b)
 		end
 
 		if a.timeLeftSeconds ~= b.timeLeftSeconds then
-			return a.timeLeftSeconds < b.timeLeftSeconds
+			return a.timeLeftSeconds > b.timeLeftSeconds
 		end
 		
 		if a.hasTentativeGroup ~= b.hasTentativeGroup then

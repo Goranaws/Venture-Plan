@@ -566,7 +566,7 @@ function FollowerButton_OnEnter(self)
 		local tn = C_Garrison.GetMissionName(tmid)
 		GameTooltip:AddLine(" ")
 		GameTooltip:AddLine((L"In Tentative Party - %s"):format(tn or "??"), 1, 0.4, 0)
-		GameTooltip:AddLine("Shift".."+|TInterface\\TUTORIALFRAME\\UI-TUTORIAL-FRAME:0:0:0:-1:512:512:2:78:240:316|t:" .." to remove from Tentative Group")
+		GameTooltip:AddLine("|TInterface\\TUTORIALFRAME\\UI-TUTORIAL-FRAME:0:0:0:-1:512:512:2:78:240:316|t:" .." to remove from Tentative Group")
 		GameTooltip:Show()
 	end
 	if not (info.isAutoTroop or info.missionTimeEnd) then

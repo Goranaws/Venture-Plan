@@ -273,12 +273,6 @@ do -- Tentative Groups
 		local mid = followerMissionID[fid]
 		return groups[mid] and mid
 	end
-
-	function U.RemoveFollowerFromTentativeGroup(fid)
-		if followerMissionID[fid] then
-			followerMissionID[fid] = nil
-		end
-	end
 	function U.DisbandTentativeGroups()
 		groups, followerMissionID = {}, {}
 		EV("I_TENTATIVE_GROUPS_CHANGED")
